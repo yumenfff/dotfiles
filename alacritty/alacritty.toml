@@ -1,7 +1,13 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/custom.toml"
+    # "~/.config/alacritty/themes/themes/custom.toml"
+	    "~/.config/alacritty/themes/themes/tokyo_night_enhanced.toml"
 ]
+
+[[keyboard.bindings]]
+key = "Backspace"
+mods = "Command"
+chars = "\u0015"
 
 [env]
 TERM = "xterm-256color"
@@ -9,29 +15,43 @@ COLORTERM = "truecolor"
 LANG = "en_US.UTF-8"
 
 [font]
-size = 18
+size = 21
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+# family = "JetBrainsMono Nerd Font Mono"
+# family = "DankMono Nerd Font"
+family = "DankMono Nerd Font"
+# family = "OperatorMonoLig Nerd Font"
+# family = "MonoLisa Nerd Font"
+# family = "FantasqueSansM Nerd Font"
 style = "Regular"
+
+[font.italic]
+family = "DankMono Nerd Font"
+style = "Italic"
+
 
 [cursor.style]
 shape = "Beam"
 blinking = "Off"
 
+[colors.cursor]
+text = '#1e1e1e'
+cursor = '#94E2D5'
+
 [window]
 decorations = "Buttonless"
 dynamic_padding = true
-opacity = 0.4
+opacity = 0.75
 blur = true 
-#startup_mode = "Maximized"
-startup_mode = "Windowed"
-dimensions = { columns = 100, lines = 30 }
+startup_mode = "Maximized"
+# startup_mode = "Windowed"
+# dimensions = { columns = 115, lines = 29 }
 
-[window.position]
-x = 400
-y = 100
+# [window.position]
+# x = 100
+# y = 90
 
 [window.padding]
-x = 15
-y = 15
+x = 10
+y = 10
